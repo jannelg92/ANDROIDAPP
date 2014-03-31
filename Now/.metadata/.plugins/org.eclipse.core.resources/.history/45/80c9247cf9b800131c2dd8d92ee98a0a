@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/event_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:text="@string/calendar"
+        android:textColor="#500000"
+        android:textSize="@dimen/big_text" />
+    
+    <ImageView
+        android:id="@+id/imageBorderW"
+        android:layout_width="fill_parent"
+        android:layout_height="7dp"
+        android:background="#500000"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/divider_horizontal_dark" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/eventTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/mid_text"
+            android:text="test event"
+            android:paddingRight="15px" />
+        <TextView
+            android:id="@+id/eventTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/mid_text"
+            android:text="9:00 AM"
+            android:paddingRight="15px" />
+        <TextView
+            android:id="@+id/eventDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/mid_text"
+            android:text="11/13/14" />
+
+        <ImageButton
+            android:id="@+id/detailsButton"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:scaleType="centerCrop"
+            android:src=" />
+	</TableRow>
+</TableLayout>
