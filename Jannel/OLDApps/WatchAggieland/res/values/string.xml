@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TAMUSustainability</string>
+    <string name="action_settings">Links and Settings</string>
+    <string name="title_section1">Share Campus-Sustainability Feedback</string>
+    <string name="title_section2">About TAMU Campus Classics, GIS Events and more </string>
+    <string name="title_section3">App Help </string>
+    <string name="main">Home page</string>
+    <string name="feed">Picture submissions</string>
+    <string name="campus">Aggieland campus maps, events, news and or helpful information links</string>
+    <string name="help">Have no idea know what to do? Click here!</string>
+    <string name="whatever">Both, efforts at their best and at their worst! Anything you see, we want to know!</string>
+    <string name="cam">Take a new picture                            |</string>
+    <string name="photo">Attach a picture</string>
+
+</resources>

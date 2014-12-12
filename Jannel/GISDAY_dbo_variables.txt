@@ -1,0 +1,58 @@
+// CheckIns
+
+
+
+// 
+
+
+
+// Event Variables
+			int Id = Convert.ToInt32(dataRow["Id"]);
+            String Guid = Convert.ToString(dataRow["Guid"]);
+            String UserGuid = Convert.ToString(dataRow["UserGuid"]);
+            String Title = Convert.ToString(dataRow["Title"]);
+            String Abstract = Convert.ToString(dataRow["Abstract"]);
+            DateTime Added = Convert.ToDateTime(dataRow["Added"]);
+            Int Capacity = Convert.ToInt32(dataRow["Capacity"]);
+            DateTime Date = Convert.ToDateTime(dataRow["Date"]);
+            Int Duration = Convert.ToInt32(dataRow["Duration"]);
+            String EventName = Convert.ToString(dataRow["EventName"]);
+            String LocationBuilding = Convert.ToString(dataRow["LocationBuilding"]);
+            String LocationRoom = Convert.ToString(dataRow["LocationRoom"]);
+            String QRCode = Convert.ToString(dataRow["QRCode"]);
+            Boolean RequiresRSVP = Convert.ToBoolean(dataRow["RequiresRSVP"]);
+            String SpeakerEmail = Convert.ToString(dataRow["SpeakerEmail"]);
+            String SpeakerFirstName = Convert.ToString(dataRow["SpeakerFirstName"]);
+            String SpeakerLastName = Convert.ToString(dataRow["SpeakerLastName"]);
+            String Time = Convert.ToString(dataRow["Time"]);
+           
+
+
+//
+
+
+
+
+//
+
+
+
+//
+
+
+
+//
+
+
+
+
+// 
+
+
+
+
+// Notify Variables
+		public int ObjectId { get; set; }
+        public string UserId { get; set; }
+        public string UserEmail { get; set; }
+        public SqlGeometry Shape { get; set; }

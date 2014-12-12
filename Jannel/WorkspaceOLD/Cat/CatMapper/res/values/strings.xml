@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cat Mapper</string>
+    <string name="app_title">Cat Mapper</string>
+    <string name="main_text_view_string">Press this button to take a picture of a cat</string>
+    <string name="map_text_view_string">Press this button to see a map of cats</string>
+    <string name="camera_button_text">This is the button</string>
+    <string name="map_button_text">View Cat Map</string>
+    <string name="tamulogo">TAMU Logo</string>
+    <string name="action_settings">Cat Actions</string>
+    <color name="aggiemaroon">#500000</color>
+    <color name="white">#ffffff</color>
+    <color name="yellow">#FFFF00</color>
+    <string name="mainMenu_button_text">Main Menu</string>
+    <string name="map_error_msg">Map failed to load</string>
+    <color name="black">#000000</color>
+    <string name="report_button_text">Report a Cat Sighting</string>
+    <string name="report_take_pic_button_text">Take a picture of cat</string>
+    <string name="report_use_pic_button_text">Use picture from gallery</string>
+    <string name="report_no_pic_button_text">Report without picture</string>
+    <string name="YES">YES</string>
+    <string name="NO">NO</string>
+    <string name="BLANK"></string>
+    <string-array name="fedArray">
+        <item></item>
+        <item>YES</item>
+        <item>NO</item>
+    </string-array>
+    <string-array name="timeArray">
+        <item></item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="numCats">
+        <item></item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+
+</resources>

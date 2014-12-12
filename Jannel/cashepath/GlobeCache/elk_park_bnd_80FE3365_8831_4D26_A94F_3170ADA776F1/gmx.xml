@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmx_dataset version="10.0 dataset configuration">
+  <param name="elk_park_bnd"/>
+  <param wide_name="elk_park_bnd"/>
+  <param extent="37.428287 37.486561 -83.326827 -83.258410 0.000000 0.000000"/>
+  <param cube_extent="1 0.915870 0.916517 0.074146 0.074907"/>
+  <param compressiontype="gmxZLIB_9"/>
+  <param face_data="0 1 0 0 0 0 "/>
+  <param datatype="gmxTDATA"/>
+  <param tilesize="512"/>
+  <param border="0"/>
+  <param max_level="29"/>
+  <param has_constant_areas="0"/>
+  <param data_format="gmxRGBA_5551"/>
+  <param sampling_mode="gmxTEXTURE_SMOOTH"/>
+  <param cache_id="80FE3365-8831-4D26-A94F-3170ADA776F1"/>
+</gmx_dataset>

@@ -1,0 +1,102 @@
+package edu.tamu.gisdayevents;
+
+import java.util.ArrayList;
+import edu.tamu.gisdayevents.R;
+import edu.tamu.gisdayevents.MainHome;
+import edu.tamu.gisdayevents.adapter.EventsCalendarAdapter;
+import edu.tamu.gisdayevents.adapter.NavDrawerListAdapter;
+import edu.tamu.gisdayevents.model.EventsCalendarItem;
+import edu.tamu.gisdayevents.model.NavDrawerItem;
+import android.app.Activity;
+import android.app.ActionBar;
+import android.app.Fragment;
+import android.content.Context;
+import android.os.Bundle;
+import android.support.v4.widget.DrawerLayout;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ListView;
+import android.widget.RelativeLayout;
+import android.os.Build;
+import android.app.FragmentManager;
+
+import android.content.res.Configuration;
+import android.content.res.TypedArray;
+import android.view.Gravity;
+import android.view.MenuInflater;
+import android.support.v4.app.ActionBarDrawerToggle;
+import android.support.v4.app.FragmentActivity;
+import android.util.Log;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.TextView;
+
+
+
+
+
+public class EventsCalendar extends Fragment {
+
+	public RelativeLayout itemLayout;
+	public ListView eventList;
+	private ArrayList<EventsCalendarItem> calendarEvents; 
+	private EventsCalendarAdapter eAdapter;
+	
+	
+	
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+		View rootView = inflater.inflate(R.layout.f_event_calendar,
+				container, false);
+		return rootView;
+		 
+	        calendarEvents = new ArrayList<EventsCalendarItem>();
+	        itemLayout = (RelativeLayout) findViewById(R.id.eventCalendarListitem);
+	        eventList = (ListView) findViewById(R.id.elistView);
+	        
+	       
+	        calendarEvents.setOnItemClickListener(new eventOnClickListener());
+	        
+	        eAdapter = new EventsCalendarAdapter(getApplicationContext(), 
+	        		calendarEvents);
+	        eventList.setAdapter(eAdapter);
+	        
+	        
+	        
+	        private class eventOnClickListener implements
+            ListView.OnItemClickListener {
+    
+	        		@Override
+	        		public void onItemClick(AdapterView<?> parent, View view, int position,
+	        					long id) {
+	        			// display view for selected nav drawer item
+	        				displayView(position);
+        
+		
+	}
+	
+	public void f_event_calendar() {
+	}
+	
+	public static Fragment newInstance(Context context) {
+    	EventsCalendar f = new EventsCalendar();
+        return f;
+    }
+ 
+    private ArrayList<EventsCalendarItem> generateData(){
+        ArrayList<EventsCalendarItem> models = new ArrayList<EventsCalendarItem>();
+        models.add(new EventsCalendarItem("TAMU GIS Events", R.drawable.ic_action_about));
+        models.add(new EventsCalendarItem("Menu Item 1", R.drawable.ic_action_signup));
+        models.add(new EventsCalendarItem("Menu Item 2", R.drawable.ic_action_eventcal));
+        models.add(new EventsCalendarItem("Menu Item 3", R.drawable.ic_action_eventdetails));
+ 
+        return models;
+    }
+		
+	}
+
+

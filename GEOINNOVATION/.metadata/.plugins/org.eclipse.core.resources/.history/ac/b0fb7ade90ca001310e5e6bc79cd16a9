@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/eventCalendarListitem"
+    android:layout_marginBottom="60dp" 
+    android:orientation="horizontal"
+    android:background="@drawable/offmaroon_back" >
+
+           <!-- icon -->
+
+		   <TextView
+		       android:id="@+id/event_label"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_centerVertical="true"
+		       android:text="Event: "
+		       android:textAlignment="center"
+		       android:textColor="#ffffff"
+		       android:textSize="@dimen/big_text" />
+
+		      <!-- icon -->
+
+		   <TextView
+		       android:id="@+id/event_name"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_toRightOf="@id/event_label"
+		       android:layout_centerVertical="true"
+		       android:drawablePadding="10dp"
+		       android:text="    Test Name   "
+		       android:textColor="#ffffff"
+		       android:textSize="@dimen/mid_text" />
+
+		 <TextView
+		     android:id="@+id/event_date"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_toRightOf="@id/event_name"
+		     android:layout_centerVertical="true"
+		     android:textSize="@dimen/mid_text"
+		     android:textColor="#ffffff" />
+		 
+		 <!-- icon -->
+
+		  <Button
+		      android:id="@+id/event_more"
+		      android:layout_width="50dp"
+		      android:layout_height="50dp"
+		      android:layout_alignParentRight="true"
+		      android:layout_alignParentTop="true"
+		      android:drawablePadding="10dp"
+		      android:src="@drawable/plus_square"
+		      android:background="@drawable/plus_square" />
+    
+</RelativeLayout>

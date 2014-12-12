@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_catmapper" default="compile.module.catmapper">
+    <dirname property="module.catmapper.basedir" file="${ant.file.module_catmapper}"/>
+
+    <property name="module.jdk.home.catmapper" value="${jdk.home.android_4.2.2_platform_(1)}"/>
+    <property name="module.jdk.bin.catmapper" value="${jdk.bin.android_4.2.2_platform_(1)}"/>
+    <property name="module.jdk.classpath.catmapper" value="jdk.classpath.android_4.2.2_platform_(1)"/>
+
+    <property name="compiler.args.catmapper" value="${compiler.args}"/>
+
+    <property name="catmapper.output.dir" value="${module.catmapper.basedir}/out/production/CatMapper"/>
+    <property name="catmapper.testoutput.dir" value="${module.catmapper.basedir}/out/test/CatMapper"/>
+
+    <path id="catmapper.module.bootclasspath">
+        <!-- Paths to be included in compilation bootclasspath -->
+    </path>
+
+    <path id="catmapper.module.production.classpath">
+        <path refid="${module.jdk.classpath.catmapper}"/>
+        <path refid="library.arcgis_android.classpath"/>
+        <path refid="library.appcompat-v7.classpath"/>
+        <path refid="library.commons-fileupload-1.3.classpath"/>
+        <path refid="library.httpmime-4.2.5.classpath"/>
+        <path refid="library.google-play-services.classpath"/>
+        <path refid="library.libs.classpath"/>
+    </path>
+
+    <path id="catmapper.runtime.production.module.classpath">
+        <pathelement location="${catmapper.output.dir}"/>
+        <path refid="library.arcgis_android.classpath"/>
+        <path refid="library.appcompat-v7.classpath"/>
+        <path refid="library.commons-fileupload-1.3.classpath"/>
+        <path refid="library.httpmime-4.2.5.classpath"/>
+        <path refid="library.google-play-services.classpath"/>
+        <path refid="library.libs.classpath"/>
+    </path>
+
+    <path id="catmapper.module.classpath">
+        <path refid="${module.jdk.classpath.catmapper}"/>
+        <pathelement location="${catmapper.output.dir}"/>
+        <path refid="library.arcgis_android.classpath"/>
+        <path refid="library.appcompat-v7.classpath"/>
+        <path refid="library.commons-fileupload-1.3.classpath"/>
+        <path refid="library.httpmime-4.2.5.classpath"/>
+        <path refid="library.google-play-services.classpath"/>
+        <path refid="library.libs.classpath"/>
+    </path>
+
+    <path id="catmapper.runtime.module.classpath">
+        <pathelement location="${catmapper.testoutput.dir}"/>
+        <pathelement location="${catmapper.output.dir}"/>
+        <path refid="library.arcgis_android.classpath"/>
+        <path refid="library.appcompat-v7.classpath"/>
+        <path refid="library.commons-fileupload-1.3.classpath"/>
+        <path refid="library.httpmime-4.2.5.classpath"/>
+        <path refid="library.google-play-services.classpath"/>
+        <path refid="library.libs.classpath"/>
+    </path>
+
+
+    <patternset id="excluded.from.module.catmapper">
+        <patternset refid="ignored.files"/>
+    </patternset>
+
+    <patternset id="excluded.from.compilation.catmapper">
+        <patternset refid="compiler.excluded"/>
+        <patternset refid="excluded.from.module.catmapper"/>
+    </patternset>
+
+    <path id="catmapper.module.sourcepath">
+        <dirset dir="${module.catmapper.basedir}">
+            <include name="gen"/>
+            <include name="src"/>
+        </dirset>
+    </path>
+
+
+    <target name="compile.module.catmapper" depends="compile.module.catmapper.production,compile.module.catmapper.tests"
+            description="Compile module CatMapper"/>
+
+    <target name="compile.module.catmapper.production" depends="register.custom.compilers"
+            description="Compile module CatMapper; production classes">
+        <mkdir dir="${catmapper.output.dir}"/>
+        <javac2 destdir="${catmapper.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}"
+                memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.catmapper}/javac">
+            <compilerarg line="${compiler.args.catmapper}"/>
+            <bootclasspath refid="catmapper.module.bootclasspath"/>
+            <classpath refid="catmapper.module.production.classpath"/>
+            <src refid="catmapper.module.sourcepath"/>
+            <patternset refid="excluded.from.compilation.catmapper"/>
+        </javac2>
+
+        <copy todir="${catmapper.output.dir}">
+            <fileset dir="${module.catmapper.basedir}/gen">
+                <patternset refid="compiler.resources"/>
+                <type type="file"/>
+                <patternset refid="excluded.from.compilation.catmapper"/>
+            </fileset>
+            <fileset dir="${module.catmapper.basedir}/src">
+                <patternset refid="compiler.resources"/>
+                <type type="file"/>
+                <patternset refid="excluded.from.compilation.catmapper"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="compile.module.catmapper.tests"
+            depends="register.custom.compilers,compile.module.catmapper.production"
+            description="compile module CatMapper; test classes" unless="skip.tests"/>
+
+    <target name="clean.module.catmapper" description="cleanup module">
+        <delete dir="${catmapper.output.dir}"/>
+        <delete dir="${catmapper.testoutput.dir}"/>
+    </target>
+</project>

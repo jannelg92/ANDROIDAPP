@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+   <item
+            android:id="@+id/logIn"
+            android:icon="@drawable/ic_action_signup"
+            android:title="@string/login"
+            android:orderInCategory="99"
+            android:showAsAction="never"/>
+    <item
+            android:id="@+id/eventCal"
+            android:title="@string/calendar"
+            android:orderInCategory="100"
+            android:showAsAction="never"/>
+    <item
+            android:id="@+id/eventCheckin"
+            android:title="@string/calendar"
+            android:orderInCategory="101"
+            android:showAsAction="never"/>
+    <item
+            android:id="@+id/myEvents"
+            android:title="@string/myevents"
+            android:orderInCategory="102"
+            android:showAsAction="never"/>
+    <item
+            android:id="@+id/settings"
+            android:title="@string/settings"
+            android:orderInCategory="103"
+            android:showAsAction="never"/>
+    <item
+            android:id="@+id/share"
+            android:title="@string/share"
+            android:orderInCategory="104"
+            android:showAsAction="never"/>
+	<item
+            android:id="@+id/logOut"
+            android:title="@string/logout"
+            android:orderInCategory="105"
+            android:showAsAction="never"/>    
+
+</menu>

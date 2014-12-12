@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.support.v4.app.FragmentActivity"/>
+<fullyQualifiedTypeName name="android.widget.ListView"/>
+<fullyQualifiedTypeName name="edu.tamu.gisdayevents.R"/>
+<fullyQualifiedTypeName name="edu.tamu.gisdayevents.R.id"/>
+<fullyQualifiedTypeName name="android.app.ListActivity"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="android.view.MenuInflater"/>
+<fullyQualifiedTypeName name="android.content.res.Configuration"/>
+<fullyQualifiedTypeName name="android.app.ActivityManager"/>
+<fullyQualifiedTypeName name="android.widget.LinearLayout"/>
+<fullyQualifiedTypeName name="android.support.v4.app.FragmentTransaction"/>
+<fullyQualifiedTypeName name="android.app.FragmentTransaction"/>
+</qualifiedTypeNameHistroy>

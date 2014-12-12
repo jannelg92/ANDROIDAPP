@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/black"
+              android:gravity="bottom|center"
+              android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"/>
+
+    <EditText
+            android:id="@+id/emailTextbox"
+            android:textCursorDrawable="@drawable/cursor_rectangle_yellow"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            android:inputType="textEmailAddress"
+            android:textSize="25sp"/>
+
+    <TextView
+            android:id="@+id/passwordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:text="Password:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"/>
+
+    <EditText
+            android:id="@+id/passwordTextbox"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="75dp"
+            android:background="@color/white"
+            android:gravity="center_vertical|bottom"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@drawable/cursor_rectangle_yellow"
+            android:textSize="25sp"/>
+
+    <Button
+            android:id="@+id/userLoginButton"
+            android:layout_marginBottom="25dp"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:background="@drawable/yellowbutton2"
+            android:text="Login"
+            android:textSize="@dimen/small_text"
+            android:textColor="@color/black"/>
+
+    <Button
+            android:id="@+id/userCreateButton"
+            android:layout_marginBottom="25dp"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:background="@drawable/yellowbutton2"
+            android:text="Create Account"
+            android:textSize="@dimen/small_text"
+            android:textColor="@color/black"/>
+
+
+</LinearLayout>
+

@@ -1,0 +1,7 @@
+The Fragment lifecycle is:
+
+onAttach(), onCreate(), onCreateView(), onActivityCreated(), onStart(), onResume(), onPause(), onStop(), onDestroyView(), onDestroy(), onDetatch().
+
+The View lifecycle is:
+
+ctor, onFinishInflate(), onAttachedToWindow(), onMeasure(), onLayout(), onDetatchedFromWindow()

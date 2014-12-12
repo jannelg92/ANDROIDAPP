@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal|bottom"
+    android:background="@drawable/aggieland_gis"
+    android:contentDescription="@string/main"
+    android:gravity="center|center_horizontal|center_vertical|start"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <Button
+        android:id="@+id/buttonEnter1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@drawable/green_bar1"
+        android:contentDescription="@string/feed"
+        android:scaleType="center"
+        android:src="@drawable/green_bar1"
+        android:text="Give Feedback"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+ />
+
+    <Button
+        android:id="@+id/buttonEnter2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_bar1"
+        android:contentDescription="@string/campus"
+        android:layout_gravity="bottom|center_horizontal"
+        android:scaleType="center"
+        android:src="@drawable/green_bar1"
+        android:text="About Campus"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" 
+        android:layout_below="@id/buttonEnter1" />
+
+    <Button
+        android:id="@+id/buttonEnter3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@drawable/green_bar1"
+        android:scaleType="center"
+        android:layout_marginBottom="25dp"
+        android:contentDescription="@string/help"
+        android:src="@drawable/green_bar1"
+        android:text="App Help"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_below="@id/buttonEnter2" />
+    
+
+</LinearLayout>

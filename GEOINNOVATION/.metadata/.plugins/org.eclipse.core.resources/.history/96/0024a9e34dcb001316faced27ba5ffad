@@ -1,0 +1,15 @@
+<account-authenticator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accountType="typeOfAuthenticator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_form"
+    android:background="@color/maroon"
+	android:icon="@drawable/icon"
+    android:smallIcon="@drawable/miniIcon"
+    android:label="@string/label"
+    android:accountPreferences="@xml/account_preferences" >
+
+     
+
+       
+        </account-authenticator> 

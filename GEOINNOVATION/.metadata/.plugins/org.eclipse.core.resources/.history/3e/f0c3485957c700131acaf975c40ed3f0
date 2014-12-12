@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--  Menu, Application, Object TITLES -->
+    <string name="app_name">TAMUgis-day Events</string>
+    <string name="application_name">Texas A&amp;M Geoservices</string>
+    <string name="nav_drawer">Navigation Drawer</string>
+    <string name="layout_piece">Structure or element of the layout</string>
+    <string name="hello_world">Hello  W O R L D!! :)</string>
+    <string name="title_menu">Navigation Menu</string>
+    <string name="title_activity_user_options">UserOptions</string>
+    <string name="title_activity_events">Events</string>
+    <string name="title_activity_event_checkin">Event_checkin</string>
+    <string name="title_section1">Welcome</string>
+    <string name="title_section2">Events</string>
+    <string name="title_sectionLogin">Log-in</string>
+    <string name="title_section3">Event Check-in</string>
+    <string name="title_section4">My Events</string>
+    <string name="title_section5">Settings</string>
+    <string name="title_section6">Log-out</string>
+    
+	<string-array name="mainTitles">
+        <item id="menu1_99">Log-in </item>
+        <item id="menu1_100">Event Calendar </item>
+        <item id="menu1_101">Share </item>
+    </string-array>
+    <string-array name="userTitles">
+        <item id="menu2_99"> Event Calendar </item>
+        <item id="menu2_100"> Event Check-in </item>
+        <item id="menu2_101"> My Events </item>
+        <item id="menu2_102"> Share </item>
+        <item id="menu2_103"> Settings </item>
+        <item id="menu2_104"> Log-out</item>
+    </string-array>
+    <string-array name="menuTitles">
+        <item id="menu2_99"> Log-in </item>
+        <item id="menu2_100"> Event Calendar </item>
+        <item id="menu2_101"> Event Check-in </item>
+        <item id="menu2_102"> My Events </item>
+        <item id="menu2_103"> Share </item>
+        <item id="menu2_104"> Settings </item>
+        <item id="menu2_105"> Log-out </item>
+    </string-array>
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_action_signup</item>
+        <item>@drawable/ic_action_eventcal</item>
+        <item>@drawable/ic_action_checkin</item>
+    	<item>@drawable/ic_action_myevents</item>
+    	<item>@drawable/ic_action_share</item>
+		<item>@drawable/ic_action_settings</item> 
+		<item>@drawable/ic_action_import_export</item> 
+		   </array>
+    
+    <!--  -->
+
+
+    <!-- Strings related to Settings, Example General settings -->
+    <string name="pref_header_general">General</string>
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact based on your message history</string>
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    
+    
+    <!-- Example settings for Notifications -->
+    
+    <string name="pref_header_notifications">Notifications</string>
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+    <string name="pref_title_vibrate">Vibrate</string>
+    
+    
+    <string name="app_settings">App Settings</string>
+
+
+    <string name="main">Home</string>
+    <string name="login">Log-in</string>
+    <string name="calendar">Event Calendar</string>
+    <string name="checkin">Event Checkin</string>
+    <string name="myevents">My Events</string>
+    <string name="share">Share</string>
+    <string name="map">Map</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Log-out</string>
+    <string name="returnB">Back</string>
+    <string name="details">Event Details</string>
+    <string name="prof_classes">Professor-added Classes </string>
+    <string name="prof">Professors </string>
+    <string name="pics">Pictures</string>
+    <string name="signup">Sign-up </string>
+    <string name="mycourses">My Courses</string>
+    <string name="notify">Notifcation Options </string>
+    <string name="event_remind">Send Event Reminders</string>
+    <string name="push">Allow Push Notifications</string>
+    <string name="gps">Allow GPS Tracking</string>
+
+  
+<!-- Description Strings -->
+  <color name="maroon">#500000</color>
+  <color name="selector">#F4AF00</color> 
+  <color name="background">#FDEFCC </color>  
+    <string name="drawer_open">Open Menu</string>
+    <string name="drawer_close">Close Menu</string>
+    <string name="app_error">Sorry, GIS DAY app is NOT available.</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">HelloWorld</string>
+    <string name="action_settings">Settings</string>
+
+    
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_register"><b>Sign in</b> or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_forgot_password">Recover lost password</string>
+    <string name="login_progress_signing_in">Signing in&#8230;</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+</resources>

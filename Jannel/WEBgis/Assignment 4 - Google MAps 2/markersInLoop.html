@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Alec Kelly's Map</title>
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 10px;
+        padding: 0px
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+
+	
+	var b1 = new google.maps.LatLng(30.615647, -96.340721);
+	var b2 = new google.maps.LatLng(30.618828, -96.340461);
+	var b3 = new google.maps.LatLng(30.616081, -96.338208);
+	var b4 = new google.maps.LatLng(30.617033, -96.336169);
+	var b5 = new google.maps.LatLng(30.617556, -96.337956);
+	  
+	  
+	  var mapOptions = {
+		zoom: 17,
+		center: b1,
+		disableDefaultUI:true,
+		panControl:false,
+		zoomControl:false,
+		scaleControl:true,
+		mapTypeId: google.maps.MapTypeId.SATELLITE
+	  }
+
+	  var map = "";
+	  
+		  
+function initialize() 
+{
+
+	
+	map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+		  
+	  MakeMarker(b1, "this is awesome b1");
+	  MakeMarker(b2, "b2");
+	  MakeMarker(b3, "b3");
+	  MakeMarker(b4, "b4");
+	  MakeMarker(b5, "b5");
+  
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+
+      var infowindow = new google.maps.InfoWindow({
+		  content: ''
+	  });
+	  
+	function MakeMarker(myLatlng, title1)
+	{
+
+		var marker = new google.maps.Marker({
+			position: myLatlng,
+			map: map,
+			title: title1
+		});
+		
+		var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">' + title1 + '</h1>'+
+      '<div id="bodyContent">'+
+      '<p>marker: ' + title1 + '</p>'+
+      '</div>'+
+      '</div>';
+
+	  
+	  
+	  google.maps.event.addListener(marker, 'click', function() 
+	  {
+		infowindow.setContent(title1)
+		infowindow.open(map,marker);
+		});
+	  
+	  
+	}
+
+
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+</html>

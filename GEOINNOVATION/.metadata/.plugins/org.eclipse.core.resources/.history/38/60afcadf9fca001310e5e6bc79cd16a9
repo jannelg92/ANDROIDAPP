@@ -1,0 +1,76 @@
+package edu.tamu.gisdayevents.adapter;
+
+
+import edu.tamu.gisdayevents.model.CalendarDetailsModel;
+import edu.tamu.gisdayevents.CalendarDetails;
+import edu.tamu.gisdayevents.R;
+import java.util.ArrayList;
+
+
+import android.app.Activity;
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+
+public class CalendarDetailsAdapter extends BaseAdapter {
+
+
+     
+    private Context context;
+    private ArrayList<CalendarDetails> EventsCalendarItems;
+     
+    public CalendarDetailsAdapter(Context context, ArrayList<CalendarDetails> arrayList){
+        this.context = context;
+        this.CalendarDetailsModel = arrayList;
+    }
+ 
+   
+	@Override
+    public int getCount() {
+        return CalendarDetailsItems.size();
+    }
+ 
+    @Override
+    public Object getItem(int position) {       
+        return CalendarDetailsItems.get(position);
+    }
+ 
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
+ 
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        if (convertView == null) {
+            LayoutInflater mInflater = (LayoutInflater)
+                    context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
+            convertView = mInflater.inflate(R.layout.event_calendar_item, null);
+        }
+          
+        ImageView imgBtn = (ImageView) convertView.findViewById(R.id.event_more);
+        TextView txtLabel = (TextView) convertView.findViewById(R.id.event_label);
+        TextView txtTitle = (TextView) convertView.findViewById(R.id.event_name);
+        TextView txtDate = (TextView) convertView.findViewById(R.id.event_date);  
+        imgBtn.setImageResource(CalendarDetailsItems.get(position).getMore());        
+        txtTitle.setText(CalendarDetailsItems.get(position).getTitle());
+         
+        // displaying count
+    /*    // check whether it set visible or not
+        if(EventsCalendarItems.get(position).getCounterVisibility()){
+            txtCount.setText(EventsCalendarItems.get(position).getCount());
+        }else{
+            // hide the counter view
+            txtCount.setVisibility(View.GONE);
+        }
+      */   
+        return convertView;
+     }
+
+ 
+}

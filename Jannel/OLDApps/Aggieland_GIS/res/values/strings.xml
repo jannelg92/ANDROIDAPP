@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Aggieland GIS </string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Howdy!</string>
+    <string name="image_one">LoadingApp</string>
+    <string name="welcome">Welcome!</string>
+    <string name="title_activity_enter">EnterActivity</string>
+    <string name="office">TAMU Office of Sustainability</string>
+    <string name="why">Sustainability Ain\'t Easy Y\'all!!</string>
+    <string name="help">WE WANT YOUR HELP, AGS!!</string>
+    <string name="campus">Want to get involved with campus sustainability?</string>
+    <string name="intro_button">Howdy!</string>
+    <string name="one">Step 1.</string>
+    <string name="login">Log in</string>
+    <string name="login_button">You don\'t have to, but it could help!!</string>
+    <string name="enter">Click here to participate in campus Sustainability!!</string>
+    <string name="show_button">Let me show you something!</string>
+    <string name="two">Step 2.</string>
+    <string name="picktype">Choose your observation category.....</string>
+    <string name="positive">Something positive! </string>
+    <string name="pos">Great sustainability!</string>
+    <string name="sug">Suggestion</string>
+    <string name="neg">Not-so-sustainable</string>
+    <string name="suggest">Suggestion or area needing a change </string>
+    <string name="negative">Something negative! </string>
+    <string name="thanks">Thank you for your the input and participation towards a more sustainable college campus! </string>
+    <string name="title_activity_main1">MainActivity</string>
+    <string name="title_activity_choosemedia">ChooseMediaTypeActivity</string>
+    <string name="snap">Picture</string>
+    <string name="video">Quick Video</string>
+    <string name="audio">Quick audio/noice only recording</string>
+    <string name="three">Step 3.</string>
+    <string name="img_gpb">TAMU Green Police, Our campus\' Voluntary Sustainability!! </string>
+    <string name="pickmedia">Choose which recording measure you will use.....</string>
+    <string name="camera">Use my camera to take a picture </string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_intro1">Intro1Activity</string>
+    <string name="title_activity_intro2">Intro2Activity</string>
+    <string name="title_activity_intro3">Intro3Activity</string>
+
+</resources>

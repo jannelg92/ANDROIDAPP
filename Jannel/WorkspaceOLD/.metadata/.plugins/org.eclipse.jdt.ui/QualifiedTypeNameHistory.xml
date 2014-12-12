@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.app.Activity"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="android.widget.ImageButton"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.view.View.OnCreateContextMenuListener"/>
+<fullyQualifiedTypeName name="android.R.menu"/>
+<fullyQualifiedTypeName name="edu.geoservices.gisday.LoginActivity"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="android.view.MenuInflater"/>
+<fullyQualifiedTypeName name="android.graphics.drawable.Drawable"/>
+<fullyQualifiedTypeName name="android.graphics.drawable.Drawable.Callback"/>
+<fullyQualifiedTypeName name="android.graphics.drawable.ColorDrawable"/>
+<fullyQualifiedTypeName name="android.app.ActionBar"/>
+<fullyQualifiedTypeName name="android.app.ActionBar.LayoutParams"/>
+<fullyQualifiedTypeName name="android.view.ViewGroup.LayoutParams"/>
+<fullyQualifiedTypeName name="android.content.res.Configuration"/>
+<fullyQualifiedTypeName name="android.widget.AdapterView.OnItemClickListener"/>
+<fullyQualifiedTypeName name="android.text.Selection"/>
+<fullyQualifiedTypeName name="edu.geoservices.gisday.R"/>
+<fullyQualifiedTypeName name="edu.geoservices.gisday.R.string"/>
+<fullyQualifiedTypeName name="edu.geoservices.gisday.R.array"/>
+<fullyQualifiedTypeName name="java.util.Locale"/>
+<fullyQualifiedTypeName name="android.widget.ImageView"/>
+<fullyQualifiedTypeName name="edu.geoservices.gisday.R.layout"/>
+<fullyQualifiedTypeName name="edu.geoservices.gisday.R.menu"/>
+<fullyQualifiedTypeName name="java.lang.CharSequence"/>
+<fullyQualifiedTypeName name="edu.geoservices.gisday.R.id"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="edu.geoservices.gisday.R.drawable"/>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="android.R.layout"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+            android:id="@+id/menu_settings"
+            android:title="Settings"
+            android:orderInCategory="99"
+            android:showAsAction="never"/>
+    <item
+            android:id="@+id/user_login"
+            android:title="Login"
+            android:orderInCategory="100"
+            android:showAsAction="never"/>
+    <item
+            android:id="@+id/user_logout"
+            android:title="Logout"
+            android:orderInCategory="101"
+            android:showAsAction="never"/>
+    <item
+            android:id="@+id/user_options"
+            android:title="Options"
+            android:orderInCategory="102"
+            android:showAsAction="never"/>
+    <item
+            android:id="@+id/quit_app"
+            android:title="BACK"
+            android:orderInCategory="103"
+            android:showAsAction="never"/>
+    <item
+            android:id="@+id/view_map"
+            android:title="View Map"
+            android:orderInCategory="1"
+            android:showAsAction="never"/>
+    <item
+            android:id="@+id/view_classics"
+            android:title="Home"
+            android:orderInCategory="2"
+            android:showAsAction="never"/>
+
+
+</menu>

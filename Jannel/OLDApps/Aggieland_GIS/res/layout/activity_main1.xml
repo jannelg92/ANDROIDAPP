@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blank_background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Main1Activity" >
+
+    <TextView
+        android:id="@+id/textMain1"
+        android:layout_width="@dimen/enter_textW"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/help_text2" />
+
+    <TextView
+        android:id="@+id/textMain2"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:text="@string/picktype"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/help_text" />
+
+    <ImageButton
+        android:id="@+id/buttonMain_pos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_pos"
+        android:contentDescription="@string/positive"
+        android:scaleType="centerCrop"
+        android:src="@drawable/green_pos" />
+
+    <ImageButton
+        android:id="@+id/buttonMain_tree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_sug"
+        android:contentDescription="@string/suggest"
+        />
+
+    <ImageButton
+        android:id="@+id/buttonMain_neg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_neg"
+        android:contentDescription="@string/negative"
+        android:scaleType="centerCrop"
+        android:src="@drawable/green_neg" />
+
+</LinearLayout>

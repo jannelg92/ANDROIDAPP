@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="title_activity_feedback">FeedbackActivity</string>
+    <string name="dummy_button">Submit</string>
+    <string name="dummy_content">Take a picture of TAMU campus Sustainability</string>
+
+</resources>

@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/fluent-hc-4.2.5-7c598a03c2d51494c2d69d93103b042e.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/commons-fileupload-1.3-7c7392d7857f045ca844120da61363b8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/jackson-core-lgpl-1.9.5-f80e8d2f57d77701b16eaf9dff5a9bf2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/android-support-v4-679fd6a9bc9fa014f26e17d35f1abc85.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/Parse-1.3.5-4a02213e41f5956db651edf97cd62f54.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/commons-logging-1.1.1-b871d11d70253e64798634036bdbb688.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/httpclient-4.2.5-eefd6ccab17ff4c502cce8fcf5209d73.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/jcifs-1.3.17-67c32f755214bc63c3663a607aebe7d9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/httpcore-4.2.4-2f4ff5809152cc66ea9d5a39072c0b90.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/httpmime-4.2.5-8bd1b51bcb94cfcc412dd69d64c00b06.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/jackson-mapper-lgpl-1.9.5-79538655d39d87b9826425beeb9f7f95.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/httpclient-cache-4.2.5-b68473f7603fa05040e1fe77103f1011.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/commons-codec-1.6-dca39f429f093c5d1ebd438db28da91d.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/arcgis-android-api-228f4f9e7da19208568f2782cc2674af.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

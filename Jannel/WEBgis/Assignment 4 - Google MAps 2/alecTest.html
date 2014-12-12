@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Alec Kelly's Map</title>
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 10px;
+        padding: 0px
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=weather"></script>
+    <script>
+
+function initialize() 
+{
+
+	var myLatLng = new google.maps.LatLng(30.617608, -96.336628);
+	var adminBuild = new google.maps.LatLng(30.615647, -96.340721);
+	var halBout = new google.maps.LatLng(30.618828, -96.340461);
+	var sCC = new google.maps.LatLng(30.616081, -96.338208);
+	var cSA = new google.maps.LatLng(30.617033, -96.336169);
+	var lBA = new google.maps.LatLng(30.617556, -96.337956);
+	var image = 'http://uniformcritics.com/unis/logos/teams/tamu-aggies.png';
+	  
+	  
+	  var mapOptions = {
+		zoom: 17,
+		center: myLatLng,
+		disableDefaultUI:true,
+		panControl:false,
+		zoomControl:false,
+		scaleControl:true,
+		mapTypeId: google.maps.MapTypeId.SATELLITE
+	  }
+
+	  var map = new google.maps.Map(document.getElementById('map-canvas'),
+		  mapOptions);
+
+
+	  var weatherLayer = new google.maps.weather.WeatherLayer({
+		temperatureUnits: google.maps.weather.TemperatureUnit.FAHRENHEIT
+	  });
+	  weatherLayer.setMap(map);
+
+	  var cloudLayer = new google.maps.weather.CloudLayer();
+	  cloudLayer.setMap(map);
+	 
+	  var infowindow = new google.maps.InfoWindow({
+		  content: 'Where dreams go to die...',
+		  Position: myLatLng
+	  });
+	  
+	  infowindow.open(map);
+	  
+	  var infowindow1 = new google.maps.InfoWindow({
+		  content: 'Where dreams go to die...',
+		  Position: myLatLng
+	  });
+	  
+	  var infowindow2 = new google.maps.InfoWindow({
+		  content: 'Where dreams go to die...',
+		  Position: halBout
+	  });
+	  
+	  var infowindow3 = new google.maps.InfoWindow({
+		  content: 'Where dreams go to die...',
+		  Position: myLatLng
+	  });
+	  
+	  var infowindow4 = new google.maps.InfoWindow({
+		  content: 'Where dreams go to die...',
+		  Position: myLatLng
+	  });
+	  
+	  var infowindow5 = new google.maps.InfoWindow({
+		  content: 'Where dreams go to die...',
+		  Position: myLatLng
+	  });
+	  
+	  google.maps.event.addListener(map, 'zoom_changed', 
+	  function() 
+		  {
+		  var zoomLevel = map.getZoom();
+		  map.setCenter (myLatLng);
+		  infowindow.setContent('Zoom: ' + zoomLevel);
+		  }
+	  );
+	  
+	  var marker = new google.maps.Marker({
+		  position: halBout,
+		  map:map,
+		  title: 'This is the Halbouty Buidling!'
+	  });
+	  
+	  var marker1 = new google.maps.Marker({
+		  position: sCC,
+		  map: map,
+		  title: 'This is the Student Computing Center!'
+	  });
+	  
+	  var marker2 = new google.maps.Marker({
+		  position: cSA,
+		  map: map,
+		  title: 'This is the Computing Services Annex!'
+	  });
+	  
+	  var marker3 = new google.maps.Marker({
+		  position: lBA,
+		  map: map,
+		  title: 'This is the Liberal Arts Building!'
+	  });
+	  
+	  var marker3 = new google.maps.Marker({
+		  position: adminBuild,
+		  map:map,
+		  icon: image,
+		  title: 'This is the Old Administration Building!',
+		  draggable:true,
+		  animation: google.maps.Animation.BOUNCE
+	  });
+	  
+	  
+	  google.maps.event.addListener(marker1, 'click', toggleBounce);
+	  
+	  google.maps.event.addListener(marker2, 'click', function() 
+		  {
+		  infowindow2.setContent('something else');
+		  //infowindow2.open();
+		  infowindow.open(map,marker2);
+		  //infowindow2.setContent('HErse: ' + zoomLevel);
+		  });
+  }
+  
+  function toggleBounce() {
+  if (marker.getAnimation() != null) {
+	marker.setAnimation(null);
+  } else {
+	marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
+  
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+
+
+
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+</html>

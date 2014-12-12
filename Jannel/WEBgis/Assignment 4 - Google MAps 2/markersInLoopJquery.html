@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Alec Kelly's Map</title>
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 10px;
+        padding: 0px
+      }
+    </style>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	
+    <script>
+
+	
+	function getData() 
+	{
+            var pointsAPI = "http://catmapper.tamu.edu/rest/geo/points/get/";
+
+            $.getJSON
+        (
+            pointsAPI, 
+			{
+				param1: "p1",
+				param2: "p2",
+			}
+        )
+
+        .done(handleDone)
+        .fail(handleFail)
+        .always(handleAlways)
+        }
+
+        function handleDone(data, textStatus, jqXHR) {
+            $.each(data.items, function (i, item) {
+
+                var contentString = '<div id="content">' +
+              '<div id="siteNotice">' +
+              '</div>' +
+              '<h1 id="firstHeading" class="firstHeading">CAT SIGHTING !</h1>' +
+              '<div id="bodyContent">' +
+              '<p>ID ' + item.ID + '</p>' +
+                '<p>Guid: ' + item.Guid + '</p>' +
+                '<p>Added: ' + item.Added + '</p>' +
+                '<p>StreetAddress: ' + item.StreetAddress + '</p>' +
+                '<p>City: ' + item.City + '</p>' +
+                '<p>State: ' + item.State + 'TX</p>' +
+                '<p>Zip: ' + item.Zip + '</p>' +
+                '<p>Fed: ' + item.Fed + '</p>' +
+                '<p>photoURL: ' + item.photoURL + '</p>' +
+                '<p>SinceWeek: ' + item.SinceWeek + '</p>' +
+                '<p>PhotoDate: ' + item.PhotoDate + '</p>' +
+                '<p>BeenCatch: ' + item.BeenCatch + '</p>' +
+                '<p>CatchDate: ' + item.CatchDate + '</p>' +
+                '<p>Shape: ' + item.Shape + '</p>' +
+                '<p>Latitude: ' + item.Latitude + '</p>' +
+                '<p>Longitude: ' + item.Longitude + '</p>' +
+              '</div>' +
+              '</div>';
+
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString
+                });
+
+
+                var myLatLng = new google.maps.LatLng(item.Latitude, item.Longitude);
+                var marker = new google.maps.Marker(
+                {
+                    position: myLatLng,
+                    map: map,
+                    id: item.ID
+                });
+
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindow.open(map, marker);
+                });
+
+
+                markers.push(marker);
+                buildAndAddDiv(item);
+
+            }
+            );
+
+
+
+        }
+
+        function handleFail(data, textStatus, jqXHR) {
+            alert('Failed: ' + textStatus);
+        }
+
+        function handleAlways(data, textStatus, jqXHR) {
+            //alert('run');
+        }
+
+	
+	
+	
+	var b1 = new google.maps.LatLng(30.615647, -96.340721);
+	var b2 = new google.maps.LatLng(30.618828, -96.340461);
+	var b3 = new google.maps.LatLng(30.616081, -96.338208);
+	var b4 = new google.maps.LatLng(30.617033, -96.336169);
+	var b5 = new google.maps.LatLng(30.617556, -96.337956);
+	  
+	  
+	  var mapOptions = {
+		zoom: 17,
+		center: b1,
+		disableDefaultUI:true,
+		panControl:false,
+		zoomControl:false,
+		scaleControl:true,
+		mapTypeId: google.maps.MapTypeId.SATELLITE
+	  }
+
+	  var map = "";
+	  
+		  
+function initialize() 
+{
+
+	var x = $('map-canvas');
+	map = new google.maps.Map(x, mapOptions);
+		  
+	  MakeMarker(b1, "this is awesome b1");
+	  MakeMarker(b2, "b2");
+	  MakeMarker(b3, "b3");
+	  MakeMarker(b4, "b4");
+	  MakeMarker(b5, "b5");
+  
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+
+      var infowindow = new google.maps.InfoWindow({
+		  content: ''
+	  });
+	  
+	function MakeMarker(myLatlng, title1)
+	{
+
+		var marker = new google.maps.Marker({
+			position: myLatlng,
+			map: map,
+			title: title1
+		});
+		
+		var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">' + title1 + '</h1>'+
+      '<div id="bodyContent">'+
+      '<p>marker: ' + title1 + '</p>'+
+      '</div>'+
+      '</div>';
+
+	  
+	  
+	  google.maps.event.addListener(marker, 'click', function() 
+	  {
+		infowindow.setContent(title1)
+		infowindow.open(map,marker);
+		});
+	  
+	  
+	}
+
+
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+</html>

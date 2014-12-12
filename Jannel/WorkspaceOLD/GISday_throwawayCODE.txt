@@ -1,0 +1,168 @@
+
+public static class MenuFragment extends Fragment  
+	{
+	
+		private DrawerLayout oDrawerLayout; 
+		private ListView oDrawerList;
+		private ActionBarDrawerToggle drawer_toggle;
+		private CharSequence pageTitle;
+		private CharSequence drawerTitle;
+		private String[] menuTitles;
+		public int geoservices_banner, home_b, back_b, menu_b;
+		public static boolean userAuthenticated; 
+		public static final String ARG_MENU_ITEM_NUMBER = "menu_item_number";
+		
+		public MenuFragment()
+		{
+			//Empty constructor required for fragment subclasses
+		}
+
+/*	if (LoginActivity.authenticateUser()) 	
+				 		{ menuTitles = getResources().getStringArray(R.array.menuTitles1); }
+				 	else 
+				 		{ menuTitles = getResources().getStringArray(R.array.menuTitles2); } */		
+		
+		
+		
+		@Override 
+		public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+			{
+					View rootView = inflater.inflate(R.layout.fragment, container, false);
+		
+					int i = getArguments().getInt(ARG_MENU_ITEM_NUMBER);
+		
+					String mItem = getResources().getStringArray(R.array.menuTitles)[i];
+					
+					int imageId = getResources().getIdentifier(mItem.toLowerCase(Locale.getDefault()), "drawable", getActivity().getPackageName());
+					
+					((ImageView) rootView.findViewById(R.id.image)).setImageResource(imageId);
+					getActivity().setTitle(mItem);
+					return rootView;
+			
+			}
+	}
+
+	
+	
+	
+	
+public boolean onPreapreOptionsMenu(Menu menu)
+{
+	boolean drawerOpen = oDrawerLayout.isDrawerOpen(oDrawerList);
+	menu.findItem(R.id.Menu).setVisible(!drawerOpen);
+	menu.findItem(R.id.Back).isVisible();
+	
+	return super.onPrepareOptionsMenu(menu);
+	
+}
+
+ /* LayoutInflater inflater = (LayoutInflater) getActionBar().getThemedContext().getSystemService(LAYOUT_INFLATER_SERVICE); 
+	  //      View customActionBarView = inflater.inflate(R.drawable.geoservices_banner, null);
+	        actionBar.setDisplayOptions
+	        		(
+	        		ActionBar.DISPLAY_SHOW_CUSTOM 
+	        		);
+	       actionBar.setCustomView(customActionBarView, new ActionBar.LayoutParams
+	    		   			( 
+	    				   ViewGroup.LayoutParams.MATCH_PARENT,
+	    				   ViewGroup.LayoutParams.MATCH_PARENT
+	    				   
+	    				   ));     */
+						   
+						   
+						    /* 
+				 oMenuTitles = getResources().getStringArray(R.array.menuTitles);
+				 oDrawerList.setOnItemClickListener(new DrawerItemClickListener());
+				 drawer_toggle = new ActionBarDrawerToggle(this, 
+									oDrawerLayout,
+									R.drawable.ic_action_menu,
+									R.string.drawer_open,
+									R.string.drawer_close	) {	  
+								public void onDrawerClosed(View view)
+			        				{
+									super.onDrawerClosed(view);
+			        				getActionBar().setTitle(pageTitle);
+			        				}
+			        		
+			        				public void onDrawerOpened(View drawerView)
+			        				{
+			        				super.onDrawerClosed(drawerView);
+			        				getActionBar().setTitle("Opened Drawer");
+			        				}
+					};
+				 
+					oDrawerLayout.setDrawerListener(drawer_toggle);
+				     getActionBar().setHomeButtonEnabled(true);
+				 
+		 //enable ActionBar icon stuff 
+	
+	       // Toggle btwn drawer and the action bar app icon
+	  		
+		   // Get a handle to the button so we can add a handler for the click event
+		 
+	      /*  actionBar.setSubtitle("Geo-Services");
+	        actionBar.setTitle("TAMU GIS Day");  
+	        System.out.println(menuTitles.length);
+	       */ 
+	        
+
+	        	       
+	
+	
+	/*			 	 else 
+			switch (item.getItemId()) {
+					case R.id.menu2_99:
+						System.exit(0);
+						return true;
+					case R.id.menu2_100:
+						Intent calender = new Intent(MainActivity.this, CalenderActivity.class); 
+						startActivity(calender);
+						return true;
+					case R.id.menu2_101:
+						Intent share = new Intent(MainActivity.this, ShareActivity.class);
+						startActivity(share);
+						return true;
+					case R.id.menu2_102:
+						Intent checkin = new Intent(MainActivity.this, Event_checkinActivity.class);
+						startActivity(checkin);
+						return true;
+					case R.id.menu2_103:
+						Intent myevents = new Intent(MainActivity.this, EventActivity.class);
+						startActivity(myevents);
+						return true;
+					case R.id.menu2_104:
+						Intent settings = new Intent(MainActivity.this, SettingsActivity.class);
+						startActivity(settings);
+						return true;
+					default:
+		                return super.onOptionsItemSelected(item); }
+			 	 
+	
+			    }
+	     
+	
+    	@Override
+    	public boolean  onCreateOptionsMenu(Menu menu) 
+    	{
+    		if (LoginActivity.authenticateUser()) 
+	    		{	
+	    		getMenuInflater().inflate(R.menu.bar_menu2, menu); 
+	    		return true; }
+    		else 	
+    			 { 
+    			 getMenuInflater().inflate(R.menu.bar_menu1, menu);
+		        return true; }
+		}
+		      */
+  
+	
+			/*	if (LoginActivity.authenticateUser()) 	
+			{
+			inflater.inflate(R.menu.bar_menu2, menu);
+			}
+			else
+			{
+			inflater.inflate(R.menu.bar_menu1, menu);
+			}
+			*/
+		

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:gravity="bottom|center"
+              android:orientation="vertical"
+              android:background="@drawable/back2">
+
+
+    <Button
+            android:id="@+id/report_button"
+            android:layout_marginBottom="25dp"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:background="@drawable/yellowbutton2"
+            android:text="@string/report_button_text"
+            android:textSize="@dimen/small_text"
+            android:textColor="@color/black"/>
+
+
+    <Button
+            android:id="@+id/map_button"
+            android:layout_marginBottom="25dp"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:background="@drawable/yellowbutton2"
+            android:text="@string/map_button_text"
+            android:textSize="@dimen/small_text"
+            android:textColor="@color/black"/>
+
+
+</LinearLayout>
+

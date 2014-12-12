@@ -1,0 +1,27 @@
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/logoptions"  >
+    
+     <Button
+			            android:id="@+id/login_b"
+			            android:layout_marginBottom="25dp"
+			            android:layout_width="140dp"
+			            android:layout_height="50dp"
+			            android:background="#8F8F8C"
+			            android:text="Login"
+			            android:textSize="@dimen/small_text"
+			            android:textColor="#E8E5DF"
+			            android:clickable="true" />
+			
+			        <Button
+			            android:id="@+id/create_login_b"
+			            android:layout_width="140dp"
+			            android:layout_height="50dp"
+			            android:layout_marginBottom="25dp"
+			            android:background="#5F574F"
+			            android:clickable="true"
+			            android:text="Sign up"
+			            android:textColor="#E8E5DF"
+			            android:textSize="@dimen/small_text" />
+</fragment>

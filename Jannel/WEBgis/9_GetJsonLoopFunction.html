@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+   
+  $.getJSON("http://soilmoisture.tamu.edu/rest/geo/points/get/",handleDone);
+		
+  });
+});
+
+
+function handleDone(data, textStatus)
+{
+		alert( 'number of objects: ' + data.items.length );		
+		$.each(data.items, HandleItem);
+}
+
+
+function HandleItem(i, item)
+{
+	$('#placeholder').append("<li>StationId: " +item.StationID+ "</li>");
+}
+
+		
+</script>
+
+
+<head>
+</head>
+<body>
+
+<button>Get and Parse Json</button>
+<p>
+List
+</p>
+<ul id="placeholder">
+	
+</ul>
+
+</body>
+</html>

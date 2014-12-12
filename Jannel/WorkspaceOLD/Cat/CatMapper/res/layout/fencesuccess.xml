@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:gravity="center|center_vertical"
+              android:orientation="vertical"
+              android:background="@drawable/menu2back">
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Fence Submitted!!"
+            android:id="@+id/textView"
+            android:layout_gravity="center"
+            android:textColor="@color/yellow"
+            android:textSize="35dp"/>
+
+    <Button
+            android:id="@+id/mainMenu_button"
+            android:layout_marginBottom="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/yellowbutton2"
+            android:text="@string/mainMenu_button_text"
+            android:textSize="@dimen/small_text"
+            android:textColor="@color/black"
+            android:focusable="false"
+            android:layout_marginTop="100dp"/>
+
+
+</LinearLayout>
+

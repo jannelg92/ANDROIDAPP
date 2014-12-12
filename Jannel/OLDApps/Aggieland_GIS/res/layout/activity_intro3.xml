@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blank_background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Intro3Activity" >
+
+
+   <TextView
+       android:id="@+id/textMain1"
+       android:layout_width="wrap_content"
+       android:layout_height="@dimen/enter_textW" 
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="12dp"
+       android:text="@string/three"
+       android:textColor="#FFFFFF"
+       android:textSize="@dimen/help_text2" />
+
+   <TextView
+       android:id="@+id/textCMedia2"
+       android:layout_width="@dimen/buttonL_w"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="@dimen/activity_load"
+       android:layout_marginTop="80dp"
+       android:text="@string/pickmedia"
+       android:textColor="#FFFFFF"
+       android:textSize="@dimen/help_text" />
+
+   <ImageButton
+       android:id="@+id/buttonCMedia_video"
+       android:layout_width="@dimen/typebutton"
+       android:layout_height="@dimen/typebutton"
+       android:layout_below="@+id/buttonCMedia_attach"
+       android:layout_marginTop="43dp"
+       android:layout_toRightOf="@+id/buttonCMedia_audio"
+       android:background="@drawable/vid_rec"
+       android:contentDescription="@string/video"
+       android:scaleType="centerCrop"
+       android:src="@drawable/vid_rec" />
+
+   <ImageButton
+       android:id="@+id/buttonCMedia_camera"
+       android:layout_width="@dimen/typebutton"
+       android:layout_height="@dimen/typebutton"
+       android:layout_alignRight="@+id/textCMedia2"
+       android:layout_alignTop="@+id/buttonCMedia_attach"
+       android:background="@drawable/cam"
+       android:contentDescription="@string/camera"
+       android:scaleType="centerCrop"
+       android:src="@drawable/cam" />
+
+   <ImageButton
+       android:id="@+id/buttonCMedia_audio"
+       android:layout_width="@dimen/typebutton"
+       android:layout_height="@dimen/typebutton"
+       android:layout_alignTop="@+id/buttonCMedia_video"
+       android:layout_marginRight="14dp"
+       android:layout_toLeftOf="@+id/buttonCMedia_camera"
+       android:background="@drawable/audio_rec"
+       android:contentDescription="@string/audio"
+       android:scaleType="centerCrop"
+       android:src="@drawable/audio_rec" />
+
+   <ImageButton
+       android:id="@+id/buttonCMedia_attach"
+       android:layout_width="@dimen/typebutton"
+       android:layout_height="@dimen/typebutton"
+       android:layout_alignLeft="@+id/buttonCMedia_audio"
+       android:layout_centerVertical="true"
+       android:background="@drawable/attach"
+       android:contentDescription="@string/snap"
+       android:scaleType="centerCrop"
+       android:src="@drawable/attach" />
+
+</RelativeLayout>

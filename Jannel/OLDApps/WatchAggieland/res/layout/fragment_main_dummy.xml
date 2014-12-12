@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom|center"
+    android:background="@drawable/maroon_leaf"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$DummySectionFragment" >
+
+    <TextView
+        android:id="@+id/section_label"
+        android:text="About TAMU Campus"
+        android:textColor="#99EE55"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/ag_sat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/section_label"
+        android:layout_below="@id/section_label"
+        android:layout_marginTop="16dp"
+        android:text="Aggieland Saturday"
+        android:textColor="#99EE55"
+        android:textSize="18sp" />
+    
+    <TextView android:id="@+id/ag_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ag_sat"
+        android:text="February 15, 2014"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"  />
+    
+    <TextView 
+        android:id="@+id/maps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ag_date"
+        android:text="Campus Maps"
+        android:textColor="#99EE55"
+        android:textSize="18sp"/>
+	<Button
+        android:id="@+id/buttonEnter1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@drawable/green_bar1"
+        android:contentDescription="@string/feed"
+        android:scaleType="center"
+        android:src="@drawable/green_bar1"
+        android:text="Give Feedback"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/maps" />
+
+    <Button
+        android:id="@+id/buttonEnter2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_bar1"
+        android:contentDescription="@string/campus"
+        android:layout_gravity="bottom|center_horizontal"
+        android:scaleType="center"
+        android:src="@drawable/green_bar1"
+        android:text="About Campus"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" 
+        android:layout_below="@id/buttonEnter1" />
+
+    <Button
+        android:id="@+id/buttonEnter3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@drawable/green_bar1"
+        android:scaleType="center"
+        android:layout_marginBottom="25dp"
+        android:contentDescription="@string/help"
+        android:src="@drawable/green_bar1"
+        android:text="App Help"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_below="@id/buttonEnter2" />
+</RelativeLayout>

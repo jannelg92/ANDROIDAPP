@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/black"
+              android:gravity="bottom|center"
+              android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="200dp"
+            android:text="You are now logged in"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="30sp"/>
+
+    <Button
+            android:id="@+id/mainMenuButton"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/yellowbutton2"
+            android:text="Main Menu"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text"/>
+
+</LinearLayout>
+

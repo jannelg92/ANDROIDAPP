@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  > 
+    <ImageButton
+        android:id="@+id/login_menub"
+        android:layout_width="45.0sp"
+        android:layout_height="40sp"
+        android:layout_marginLeft="7px"
+        android:layout_marginTop="7px"
+        android:background="@drawable/menu_b"
+        android:clickable="true"
+        android:contentDescription="@string/title_menu"
+        android:scaleType="centerCrop"
+        android:src="@drawable/menu_b" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="0.63"
+        android:gravity="center|bottom"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E3E3E3"
+            android:padding="2dp"
+            android:text="Email:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#500000" />
+
+        <EditText
+            android:id="@+id/email_input"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="top|center_horizontal"
+            android:background="#E3E3E3"
+            android:inputType="textEmailAddress"
+            android:textCursorDrawable="@drawable/cursor_click"
+            android:textSize="25sp" />
+
+
+        <TextView
+            android:id="@+id/pass_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E3E3E3"
+            android:padding="5dp"
+            android:text="Password: "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#500000" />
+
+        <EditText
+            android:id="@+id/pass_input"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/pass_label"
+            android:layout_gravity="top|center_horizontal"
+            android:background="#E3E3E3"
+            android:inputType="textPassword"
+            android:textColor="#500000"
+            android:textCursorDrawable="@drawable/cursor_click"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/login_b"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/pass_input"
+            android:clickable="true"
+            android:text="@string/login1"
+            android:textColor="#E8E5DF"
+            android:background="#500000"
+            android:textSize="@dimen/small_text" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/return_b"
+        android:layout_width="45.0dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="7px"
+        android:layout_marginTop="7px"
+        android:background="@drawable/back_b"
+        android:clickable="true"
+        android:contentDescription="@string/returnB"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back_b" />
+
+</LinearLayout>
+
+

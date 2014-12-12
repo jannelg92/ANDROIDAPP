@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/howdy_aggieland_grey"
+    android:orientation="vertical" >
+    
+    <TextView
+						        android:id="@+id/firstname_label"  
+						        android:layout_width="wrap_content" android:layout_height="wrap_content" 
+						        android:background="#E3E3E3" 
+						        android:padding="3dp"
+						        android:text="First Name: "
+						        android:textAppearance="?android:attr/textAppearanceSmall" 
+						        android:textColor="#500000" />
+						    
+						    <EditText 
+						        android:id="@+id/firstname_input"  
+						        android:textCursorDrawable="@drawable/cursor_click"
+						        android:layout_gravity="top|center_horizontal"
+						        android:layout_width="200dp" android:layout_height="27dp" 
+						        android:layout_marginBottom="20dp"
+						        android:background="#E3E3E3" 
+						        android:padding="10dp" 
+						        android:inputType="textPersonName"
+						        android:textSize="25sp"  />
+						    
+						    <TextView
+						        android:id="@+id/lastname_label"  
+						        android:layout_width="wrap_content" android:layout_height="wrap_content" 
+						        android:background="#E3E3E3" 
+						        android:padding="3dp"
+						        android:text="Last Name: "
+						        android:textAppearance="?android:attr/textAppearanceSmall" 
+						        android:textColor="#500000" />
+						    
+						    <EditText 
+						        android:id="@+id/lastname_input"  
+						        android:textCursorDrawable="@drawable/cursor_click"
+						        android:layout_gravity="top|center_horizontal"
+						        android:layout_width="200dp" android:layout_height="27dp" 
+						        android:layout_marginBottom="20dp"
+						        android:background="#E3E3E3" 
+						        android:padding="10dp" 
+						        android:inputType="textPersonName"
+						        android:textSize="25sp"  />
+						    
+						    <TextView
+						        android:id="@+id/email_label"  
+						        android:layout_width="wrap_content" android:layout_height="wrap_content" 
+						        android:background="#E3E3E3" 
+						        android:padding="3dp"
+						        android:text="Email:"
+						        android:textAppearance="?android:attr/textAppearanceSmall" 
+						        android:textColor="#500000" />
+						    
+						    <EditText 
+						        android:id="@+id/email_input"  
+						        android:textCursorDrawable="@drawable/cursor_click"
+						        android:layout_gravity="top|center_horizontal"
+						        android:layout_width="200dp" android:layout_height="27dp" 
+						        android:layout_marginBottom="20dp"
+						        android:background="#E3E3E3" 
+						        android:padding="10dp" 
+						        android:inputType="textEmailAddress"
+						        android:textSize="25sp"  />
+				    
+						     <TextView
+						        android:id="@+id/pass_label" 
+						        android:layout_width="wrap_content" android:layout_height="wrap_content" 
+						        android:background="#E3E3E3" 
+						        android:padding="3dp"
+						        android:text="Password: "
+						        android:textAppearance="?android:attr/textAppearanceSmall" 
+						        android:textColor="#500000"  />
+				    
+						    <EditText 
+						        android:id="@+id/pass_input" 
+						        android:layout_width="200dp" android:layout_height="27dp" 
+						        android:textCursorDrawable="@drawable/cursor_click"
+						        android:layout_gravity="top|center_horizontal"
+						        android:background="#E3E3E3" 
+						        android:padding="10dp" 
+						        android:layout_marginBottom="20dp"
+						        android:inputType="textPassword"
+						        android:textColor="#500000" 
+						    	android:textSize="25sp"  />
+						    
+						    <TextView
+						        android:id="@+id/uin_label" 
+						        android:layout_width="wrap_content" android:layout_height="wrap_content" 
+						        android:background="#E3E3E3" 
+						        android:padding="3dp"
+						        android:text="TAMU UIN: "
+						        android:textAppearance="?android:attr/textAppearanceSmall" 
+						        android:textColor="#500000"  />
+				    
+						    <EditText 
+						        android:id="@+id/uin_input" 
+						        android:textCursorDrawable="@drawable/cursor_click"
+						        android:layout_width="200dp" android:layout_height="27dp" 
+						        android:layout_gravity="top|center_horizontal"
+						        android:background="#E3E3E3" 
+						        android:padding="10dp" 
+						        android:layout_marginBottom="20dp"
+						        android:inputType="number"
+						        android:textColor="#500000" 
+						    	android:textSize="25sp"  />
+						
+						    
+						    <Button
+						            android:id="@+id/login_create"
+						            android:layout_marginBottom="25dp"
+						            android:layout_width="200dp"
+						            android:layout_height="27dp"
+						            android:background="#500000"
+						            android:clickable="true"
+						            android:text="Login"
+						            android:textSize="@dimen/small_text"
+						            android:textColor="#E8E5DF"/> 
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blank_background"
+    android:contentDescription="@string/enter"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:textAlignment="center"
+    tools:context=".EnterActivity" >
+
+    <TextView
+        android:id="@+id/textEnter1"
+        android:layout_width="@dimen/enter_textW"
+        android:layout_height="@dimen/enter_textH"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/help"
+        android:text="@string/why"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/help_text2" />
+
+    <ImageButton
+        android:id="@+id/buttonEnter1"
+        android:layout_width="@dimen/buttonL_w"
+        android:layout_height="@dimen/buttonL_h"
+        android:background="@drawable/green_bar1"
+        android:contentDescription="@string/campus"
+        android:scaleType="fitCenter"
+        android:src="@drawable/green_intro" />
+
+    <ImageButton
+        android:id="@+id/buttonEnter3"
+        android:layout_width="@dimen/buttonS_w"
+        android:layout_height="@dimen/buttonS_h"
+        android:background="@drawable/green_bar1"
+        android:contentDescription="@string/enter"
+        android:scaleType="fitCenter"
+        android:src="@drawable/green_login" />
+
+    <ImageButton
+        android:id="@+id/buttonEnter2"
+        android:layout_width="@dimen/buttonL_w"
+        android:layout_height="@dimen/buttonL_h"
+        android:background="@drawable/green_bar1"
+        android:contentDescription="@string/enter"
+        android:scaleType="fitCenter"
+        android:src="@drawable/green_show" />
+
+    <TextView
+        android:id="@+id/textEnter2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/help"
+        android:text="@string/help"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/help_text" />
+    
+</LinearLayout>

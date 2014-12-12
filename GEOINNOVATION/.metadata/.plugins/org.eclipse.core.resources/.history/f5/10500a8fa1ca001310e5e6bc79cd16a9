@@ -1,0 +1,62 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/maroon_geoservices"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    
+    
+    <!-- Event Label -->
+    <TextView 
+        android:id="@+id/details_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/big_text"
+        android:text="Event:  " />
+    
+     <!-- Event Name -->
+
+		   <!-- Event Date -->
+		 
+		 <!-- More/Details Button -->
+
+		  <Button
+		      android:id="@+id/event_RSVP"
+		      android:layout_width="70dp"
+		      android:layout_height="70dp"
+		      android:layout_alignParentRight="true"
+		      android:layout_alignParentTop="true"
+		      android:text="RSVP"
+		      android:textSize="5dp"
+		      android:src="@drawable/plus_square"
+		      android:background="@drawable/pencil" />
+
+		  <TextView
+		      android:id="@+id/details_name"
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:layout_below="@+id/details_label"
+		      android:layout_centerHorizontal="true"
+		      android:drawablePadding="10dp"
+		      android:text=" Test Name "
+		      android:textColor="#ffffff"
+		      android:textSize="@dimen/mid_text" />
+
+		  <TextView
+		      android:id="@+id/details_date"
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:layout_alignBaseline="@+id/details_name"
+		      android:layout_alignBottom="@+id/details_name"
+		      android:layout_alignLeft="@+id/details_label"
+		      android:text="11/21"
+		      android:textColor="#ffffff"
+		      android:textSize="@dimen/mid_text" />
+
+</RelativeLayout>

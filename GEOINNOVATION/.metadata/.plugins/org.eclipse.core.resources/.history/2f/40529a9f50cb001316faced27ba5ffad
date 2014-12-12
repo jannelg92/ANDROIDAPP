@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="@drawable/aggieland_gis"
+    android:gravity="top"
+    android:orientation="horizontal"  > 
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="0.63"
+        android:gravity="center|bottom"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E3E3E3"
+            android:padding="2dp"
+            android:text="Email:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#500000" />
+
+        <EditText
+            android:id="@+id/email_input"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="top|center_horizontal"
+            android:background="#E3E3E3"
+            android:inputType="textEmailAddress"
+            android:textCursorDrawable="@drawable/cursor_click"
+            android:textSize="25sp" />
+
+
+        <TextView
+            android:id="@+id/pass_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E3E3E3"
+            android:padding="5dp"
+            android:text="Password: "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#500000" />
+
+        <EditText
+            android:id="@+id/pass_input"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/pass_label"
+            android:layout_gravity="top|center_horizontal"
+            android:background="#E3E3E3"
+            android:inputType="textPassword"
+            android:textColor="#500000"
+            android:textCursorDrawable="@drawable/cursor_click"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/login_b"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/pass_input"
+            android:clickable="true"
+            android:text="@string/login"
+            android:textColor="#E8E5DF"
+            android:background="#500000"
+            android:textSize="@dimen/small_text" />
+    </LinearLayout>
+
+    
+
+</LinearLayout>
+
+

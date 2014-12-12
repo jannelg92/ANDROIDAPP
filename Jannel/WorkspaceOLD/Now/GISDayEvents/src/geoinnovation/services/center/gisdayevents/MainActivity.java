@@ -1,0 +1,116 @@
+package geoinnovation.services.center.gisdayevents;
+
+
+import android.annotation.TargetApi;
+import android.os.Build;
+import android.os.Bundle;
+import android.app.Activity;
+import android.app.ActionBar;
+import android.content.res.Configuration;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.ListAdapter;
+import android.widget.TextView;
+import android.widget.ListView;
+import android.widget.Toast;
+import android.graphics.drawable.Drawable;
+
+
+
+@SuppressWarnings("unused")
+public class MainActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+	
+		
+		final Button eventButton = (Button) findViewById(R.id.event_b); 
+		
+		
+		
+		 eventButton.setOnClickListener(new View.OnClickListener() 
+	        {
+	        	@Override
+	        	public void onClick(View v) 
+	        	{
+		 		Intent calender = new Intent(MainActivity.this, CalendarActivity.class);
+		 		startActivity(calender);	
+		 		}
+	        }); 
+	
+
+	
+	}
+
+	
+	
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.id.main, menu);
+		return true;
+	}
+
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+	      // The action bar home/up action should open or close the drawer here, once I get that working!! 
+	      // Main menu items
+		switch (item.getItemId()) {
+		
+			case R.id.logIn:
+				Intent login = new Intent(MainActivity.this, LoginActivity.class);
+		        startActivity(login);
+		        return true;
+		    case R.id.menu1_100:
+		    	Intent calender = new Intent(MainActivity.this, CalenderActivity.class); 
+		    	startActivity(calender);
+		    	return true;
+		    case R.id.menu1_101:
+		    	Intent share = new Intent(MainActivity.this, ShareActivity.class);
+				startActivity(share);
+		        return true;   
+		    
+case R.id.menu2_99:
+	System.exit(0);
+	return true;
+case R.id.menu2_100:
+	Intent calender = new Intent(MainActivity.this, CalenderActivity.class); 
+	startActivity(calender);
+	return true;
+case R.id.menu2_101:
+	Intent share = new Intent(MainActivity.this, ShareActivity.class);
+	startActivity(share);
+	return true;
+case R.id.menu2_102:
+	Intent checkin = new Intent(MainActivity.this, Event_checkinActivity.class);
+	startActivity(checkin);
+	return true;
+case R.id.menu2_103:
+	Intent myevents = new Intent(MainActivity.this, EventActivity.class);
+	startActivity(myevents);
+	return true;
+case R.id.menu2_104:
+	Intent settings = new Intent(MainActivity.this, SettingsActivity.class);
+	startActivity(settings);
+	return true;
+default:
+    return super.onOptionsItemSelected(item);
+	
+	
+	
+}
