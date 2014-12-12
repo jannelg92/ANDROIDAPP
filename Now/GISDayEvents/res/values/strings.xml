@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TAMU GIS Day Events</string>
+    <string name="title_section1">Log-in</string>
+    <string name="title_section2">Events</string>
+    <string name="title_section3">Event Check-in</string>
+    <string name="title_section4">My Events</string>
+    <string name="title_section5">Settings</string>
+    <string name="title_section6">Log-out</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="application_name">Texas A&amp;M Geoservices</string>
+    <string name="nav_drawer">Navigation Drawer</string>
+
+    <string name="app_settings">App Settings</string>
+    
+    
+	<string name="layout_piece">Structure or element of the layout</string>
+    <string name="hello_world">Hello  W O R L D!! :)</string>
+    <string name="title_menu">Navigation Menu</string>
+    <string-array name="mainTitles">
+        <item id="menu1_99">Log-in </item>
+        <item id="menu1_100">Event Calendar </item>
+        <item id="menu1_101">Share </item>
+    </string-array>
+    <string-array name="userTitles">
+        <item id="menu2_99"> Event Calendar </item>
+        <item id="menu2_100"> Event Check-in </item>
+        <item id="menu2_101"> My Events </item>
+        <item id="menu2_102"> Share </item>
+        <item id="menu2_103"> Settings </item>
+        <item id="menu2_104"> Log-out</item>
+   	</string-array>
+    <string-array name="menuTitles">
+        <item id="menu2_99"> Log-in </item>
+        <item id="menu2_100"> Event Calendar </item>
+        <item id="menu2_101"> Event Check-in </item>
+        <item id="menu2_102"> My Events </item>
+        <item id="menu2_103"> Share </item>
+        <item id="menu2_104"> Settings </item>
+        <item id="menu2_105"> Log-out </item>
+    </string-array>    
+    <string name="main">Home</string>  
+    <string name="login">Log-in</string>  
+    <string name="calendar">Event Calendar</string>
+    <string name="checkin">Event Checkin</string>
+    <string name="myevents">My Events</string>
+    <string name="share">Share</string>
+    <string name="map">Map</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Log-out</string>
+    <string name="returnB">Back</string>
+    <string name="details">Event Details</string>
+    
+    <string name="prof_classes">Professor-added Classes </string>
+    <string name="prof">Professors </string>
+    <string name="pics">Pictures</string>
+    <string name="signup">Sign-up </string>
+    <string name="mycourses">My Courses</string>
+    <string name="notify">Notifcation Options </string>
+    <string name="event_remind">Send Event Reminders</string>
+    <string name="push">Allow Push Notifications</string>
+    <string name="gps">Allow GPS Tracking</string>
+    <color name="maroon">#500000</color>
+
+    <string name="app_not_available">Sorry, GIS DAY app is NOT available.</string>
+</resources>
+
